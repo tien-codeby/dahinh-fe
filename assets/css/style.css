@@ -48,6 +48,7 @@
 /*--------------------------
       Global Styles
 ---------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 html,
 body {
   overflow-x: hidden;
@@ -4742,11 +4743,12 @@ textarea.form-control {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-
+  
 .feature-numberd-item .feature__numberd-item-title {
   font-size: 24px;
   line-height: 27px;
   margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .feature-item {
