@@ -3845,7 +3845,7 @@ textarea.form-control {
 }
 
 .accordion-item .accordion__item-title {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #222222;
   font-weight: 500;
   font-size: 22px;
@@ -3879,12 +3879,16 @@ textarea.form-control {
 
 .accordion-item.opened .accordion__item-title {
   color: #0f3d88;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
 .accordion-item.opened .accordion__item-title:after {
   background-color: #0f3d88;
   color: #ffffff;
   content: '';
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .accordion-item .accordion__item-body {
@@ -3893,6 +3897,8 @@ textarea.form-control {
 
 .accordion-item .accordion__item-body p {
   margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
 /* Mobile Phones and tablets */
@@ -6721,7 +6727,8 @@ textarea.form-control {
   -o-transition: all 0.6s linear;
   transition: all 0.6s linear;
   background-color: #fff;
-  padding: 50px 40px 50px;
+  /* padding: 50px 40px 50px; */
+  padding: 0 !important;
 }
 
 .service-item .service__icon {
@@ -6735,9 +6742,11 @@ textarea.form-control {
 }
 
 .service-item .service__title {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 700;
   margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .service-item .service__desc {
@@ -7667,3 +7676,11 @@ textarea.form-control {
     margin-bottom: 10px;
   }
 }
+/* Dich vu */
+.service__image img{
+  object-fit: cover;
+}
+.service__title1{
+  padding:50px 30px 20px;
+}
+
