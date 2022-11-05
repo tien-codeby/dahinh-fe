@@ -1,0 +1,27 @@
+.heading .heading__title{
+    font-weight: 700;
+}
+.heading .heading__subtitle{
+    color:#0f3d88 !important;
+}
+#bannerLayout4{
+    background-position: bottom center !important;
+}
+.contact__panel{
+    margin-top:-210px !important;
+}
+.contact__form-panel-header h4{
+    font-family: 'Roboto', sans-serif;
+}
+.testimonial__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-item .blog__title {
+    font-family: 'Roboto', sans-serif;
+}
+.footer-bottom .footer__widget ,.footer__widget-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
