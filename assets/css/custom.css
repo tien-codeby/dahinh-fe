@@ -2,7 +2,7 @@
     font-weight: 700;
 }
 .heading .heading__subtitle{
-    color:#0f3d88 !important;
+    color:#0f3d88;
 }
 #bannerLayout4{
     background-position: bottom center !important;
@@ -28,4 +28,29 @@
 .slide__content .slide__title{
     font-family: 'Roboto', sans-serif;
 
+}
+#heading__title_first{
+    font-weight: 400;
+}
+.slide__content .slide__title{
+    font-size: 70px;
+}
+#heading__title_customer{
+    font-weight: 400 ;
+}
+.position-static img{
+    object-fit: cover;
+}
+#heading__subtitle{
+    color:#b9cae7;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.blog__img a > img{
+    height: 230px;
+}
+.contact__panel .contact__panel-banner img{
+    height: 400px;
+    object-fit: cover;
 }

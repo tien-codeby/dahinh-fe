@@ -3886,10 +3886,11 @@ textarea.form-control {
 .accordion-item.opened .accordion__item-title:after {
   background-color: #0f3d88;
   color: #ffffff;
-  content: '';
+  content: "-";
   font-family: 'Roboto', sans-serif;
-
+  font-size: 20px;
 }
+
 
 .accordion-item .accordion__item-body {
   padding-top: 25px;
@@ -3898,6 +3899,8 @@ textarea.form-control {
 .accordion-item .accordion__item-body p {
   margin-bottom: 0;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color:#333;
   
 }
 
@@ -4375,7 +4378,7 @@ textarea.form-control {
 .carousel-arrows .owl-nav .owl-prev:before {
   font-family: 'icomoon';
   content: '';
-  font-size: 55px;
+  font-size: 40px;
 }
 
 .carousel-arrows .owl-nav .owl-next {
@@ -4385,7 +4388,7 @@ textarea.form-control {
 .carousel-arrows .owl-nav .owl-next:before {
   font-family: 'icomoon';
   content: '';
-  font-size: 55px;
+  font-size: 40px;
 }
 
 .carousel-arrows .owl-dots {
