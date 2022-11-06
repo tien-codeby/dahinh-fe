@@ -2602,7 +2602,7 @@ textarea.form-control {
 }
 
 .navbar .nav__item .nav__item-link {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: capitalize;
   display: block;
@@ -3280,7 +3280,6 @@ textarea.form-control {
   }
 
   .navbar .dropdown-menu .nav__item .nav__item-link {
-    padding-left: 0;
     border-bottom: none;
   }
 
@@ -3291,6 +3290,7 @@ textarea.form-control {
   .navbar .dropdown-menu-col h6 {
     font-size: 13px;
     margin: 10px 0 5px;
+    font-family: "Roboto";
   }
 
   .navbar .nav__item.dropdown-submenu > .dropdown-menu.show {
@@ -3409,7 +3409,7 @@ textarea.form-control {
   .navbar .dropdown-menu {
     width: auto;
     min-width: 235px;
-    padding: 25px 0 23px;
+    padding: 20px 0 14px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 3px 63px 0px rgba(40, 40, 40, 0.11);
   }
@@ -3433,13 +3433,15 @@ textarea.form-control {
   }
 
   .navbar .dropdown-menu.wide-dropdown-menu h6 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
-    margin: 0 0 8px 40px;
+    margin: 0 0 8px 25px;
+    font-family: "Roboto";
+
   }
 
   .navbar .dropdown-menu.wide-dropdown-menu .dropdown-menu-col {
-    padding: 40px 0 27px;
+    padding: 20px 0 14px;
   }
 
   .navbar
@@ -3705,6 +3707,7 @@ textarea.form-control {
     font-size: 20px;
     padding: 0 0 0 40px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
