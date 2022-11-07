@@ -94,7 +94,33 @@
     white-space: nowrap;
     position: relative;
     padding-left: 20px;
+    transition: all 0.4s ease;
 }
 .mutiple-menu:hover{
     color:#0f3d88
 }
+
+
+.alo{
+    display: none;
+}
+.load-more{
+    background-color: #0f3d88;
+    color:#fff !important;
+    padding:10px 16px;
+    border-radius:5px;
+    font-size:16px;
+    display:inline-block;
+    transition:background-color 0.5s ease;
+  }
+  .load-more:hover{
+    background-color: #000;
+  }
+  @media only screen and (max-width: 841px) {
+   .nav__item .sub-menu{
+    display: none;
+   }
+   .load-more{
+    display: none;
+   }
+  }
