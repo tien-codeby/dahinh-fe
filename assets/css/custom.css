@@ -124,7 +124,6 @@
     display: none;
    }
   }
-<<<<<<< HEAD
   .current-time{
     bottom:-35px;
     left:35px;
@@ -165,7 +164,7 @@
   marquee{
     bottom: 0px;
     font-family: "Roboto";
-=======
+  }
   .absolute-x {
     position: absolute;
     /* top: 50%; */
@@ -175,5 +174,4 @@
   .grecaptcha-badge{
     position: relative!important;
     right: 0!important;
->>>>>>> 68b11a5a5fa8ec62cbea719047bc4d5d122341f7
   }
