@@ -118,9 +118,9 @@
   }
   @media only screen and (max-width: 841px) {
    .nav__item .sub-menu{
-    display: none;
+    /* display: none; */
    }
    .load-more{
-    display: none;
+    /* display: none; */
    }
   }
