@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/custom.css" />
         <link rel="stylesheet" href="./assets/css/general.css">
-        
+
     </head>
 
     <body>
@@ -134,14 +134,15 @@
                                     <ul class="dropdown-menu mt-10">
                                         <li class="nav__item">
                                             <a href="#" class="nav__item-link">Tuyển dụng</a>
-                                            
+
                                         </li>
-                                        <li class='nav__item sub-menu'><a class="nav__item-link" href='#'>Thư viện<i class='ml-5 fa fa-caret-down right'></i></a>
+                                        <li class='nav__item sub-menu'>
+                                          <button class="" href='#'>Thư viện<i class='ml-5 fa fa-caret-down right'></i></button>
                                             <ul>
                                               <li><a class="mutiple-menu" href='#'>File tài liệu</a></li>
                                               <li><a class="mutiple-menu" href='#'>Videos clip</a></li>
                                               <li><a class="mutiple-menu" href='#'>Hình ảnh</a></li>
-                                             
+
                                             </ul>
                                           </li>
                                         <!-- /.nav-item -->
@@ -198,10 +199,10 @@
                 
                 <!-- /.navabr -->
                 <!-- Run text animation -->
-                
+
                 <!-- /End run text animation -->
             </header>
-           
+
             <!-- /.Header -->
 
             <!-- ============================
@@ -795,7 +796,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-lg-4">
-                          
+
                             <div class="service-item">
                                 <div class="service__content">
                                     <div class="service__image">
@@ -950,7 +951,7 @@
                 </div>
             </div>
             <!-- /.col-lg-6 -->
-            
+
             <!-- /.col-lg-6 -->
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
@@ -1004,9 +1005,10 @@
                                         <h4 class="statistic__item-counter counter">754</h4>
                                         <p class="statistic__item-title">Người lao động</p>
                                     </div>
-                                    <button class="statistic__item-btn">+</button>
-                                    
-                                   
+                                    <button class="statistic__item-btn position-relative">
+                                      <span>+</span>
+                                      <p class="statistic__item-title position-absolute absolute-x mt-2 text-nowrap" >Người lao động</p>
+                                    </button>
                                 </li>
                                 <!-- /.statistic-item -->
                                 <li class="statistic-item">
@@ -1014,8 +1016,13 @@
                                         <h4 class="statistic__item-counter counter">2,187</h4>
                                         <p class="statistic__item-title">Khách hàng</p>
                                     </div>
-                                    <button class="statistic__item-btn">+</button>
-                                    
+                                    <!-- <button class="statistic__item-btn">+</button> -->
+
+                                    <button class="statistic__item-btn position-relative">
+                                      <span>+</span>
+                                      <p class="statistic__item-title position-absolute absolute-x mt-2 text-nowrap" >Khách hàng</p>
+                                    </button>
+
                                 </li>
                                 <!-- /.statistic-item -->
                                 <li class="statistic-item">
@@ -1023,8 +1030,12 @@
                                         <h4 class="statistic__item-counter counter">300</h4>
                                         <p class="statistic__item-title">Đối tác</p>
                                     </div>
-                                    <button class="statistic__item-btn">+</button>
-                                    
+                                    <!-- <button class="statistic__item-btn">+</button> -->
+
+                                    <button class="statistic__item-btn position-relative">
+                                      <span>+</span>
+                                      <p class="statistic__item-title position-absolute absolute-x mt-2 text-nowrap" >Đối tác</p>
+                                    </button>
                                 </li>
                                 <!-- /.statistic-item -->
                             </ul>
@@ -1132,7 +1143,7 @@
                                 data-space="20"
                                 data-loop="true"
                                 data-speed="700"
-                                
+
                             >
                                 <div class="client">
                                     <a href="#"><img src="assets/images/dahinh/doi-tac-samsung.png" alt="client" /></a>
@@ -1226,7 +1237,7 @@
                                 <div class="contact__panel-banner">
                                    <a href="#" > <img src="assets/images/dahinh/lienhe.jpg" alt="banner img" /></a>
                                    <!-- Modal Image Slider-->
-                                   
+
                                    <!-- End Modal Image slider-->
                                     <div class="cta__banner">
                                         <p class="cta__desc">
@@ -1241,7 +1252,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form class="contact__form-panel">
+                                <form class="contact__form-panel" id="demo-form">
                                     <div class="row">
                                         <div class="col-sm-12 contact__form-panel-header">
                                             <h4>Liên lạc</h4>
@@ -1268,7 +1279,7 @@
                                             </div>
                                         </div>
                                         <!-- /.col-lg-6 -->
-                                        
+
                                         <!-- /.col-lg-6 -->
                                         <div class="col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
@@ -1279,8 +1290,9 @@
                                             </div>
                                         </div>
                                         <!-- /.col-lg-12 -->
-                                        <div class="submit-contact col-sm-12 col-md-12 col-lg-12 d-flex align-items-center">
-                                            <button type="submit" class="btn btn__secondary mr-20">
+                                        <div class="submit-contact col-sm-12 col-md-12 col-lg-12">
+                                          <!-- <div class="submit-contact col-sm-12 col-md-12 col-lg-12 d-flex align-items-center"> -->
+                                            <!-- <button type="submit" class="btn btn__secondary mr-20">
                                                 <span>Gởi yêu cầu</span><i class="icon-arrow-right"></i>
                                             </button>
                                             <div class="input-radio">
@@ -1289,12 +1301,23 @@
                                                     <input type="checkbox" name="radioGroup2" checked />
                                                     <span class="radio-indicator"></span>
                                                 </label>
-                                            </div>
+                                            </div> -->
+
+                                    <button class="g-recaptcha btn btn__secondary mr-20"
+                                    data-sitekey="6LfTKeoiAAAAAM-jdVg1iBtVGK-VtNdxgbAK65Bp"
+                                    data-callback='onSubmit'
+                                    data-action='submit'>Gởi yêu cầu</button>
                                         </div>
                                         <!-- /.col-lg-12 -->
                                     </div>
                                     <!-- /.row -->
                                 </form>
+                                <script src="https://www.google.com/recaptcha/api.js"></script>
+                                <script>
+                                  function onSubmit(token) {
+                                    document.getElementById("demo-form").submit();
+                                  }
+                                </script>
                             </div>
                             <!-- /.contact__panel -->
                         </div>
@@ -1432,10 +1455,10 @@
                     </div>
                     <!-- /.row-->
                     <div class="row">
-                        
+
                         <!-- Blog Item #1 -->
                         <div class="col-sm-12 col-md-6 col-lg-4 alo">
-                          
+
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
@@ -1551,7 +1574,7 @@
                             <!-- /.blog-item -->
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 alo">
-                          
+
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
@@ -1589,7 +1612,7 @@
                             <!-- /.blog-item -->
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 alo">
-                          
+
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
@@ -1627,7 +1650,7 @@
                             <!-- /.blog-item -->
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 alo">
-                          
+
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
@@ -1665,7 +1688,7 @@
                             <!-- /.blog-item -->
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 alo">
-                          
+
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
@@ -1703,7 +1726,7 @@
                             <!-- /.blog-item -->
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 alo">
-                          
+
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
@@ -1741,7 +1764,7 @@
                             <!-- /.blog-item -->
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 alo">
-                          
+
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
@@ -1778,7 +1801,7 @@
                             </div>
                             <!-- /.blog-item -->
                         </div>
-                        
+
                         <!-- /.col-lg-4 -->
                     </div>
                     <!-- /.row-->
