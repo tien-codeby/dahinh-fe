@@ -2787,9 +2787,9 @@ textarea.form-control {
 
 /* navbar-transparent */
 .header-transparent .navbar {
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.15); */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   background-color: transparent;
-  border:none;
+  /* border:none; */
 }
 
 .header-transparent .navbar .navbar-toggler .menu-lines:before,
