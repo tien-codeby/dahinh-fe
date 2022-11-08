@@ -130,3 +130,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .grecaptcha-badge{
+    position: relative!important;
+    right: 0!important;
+  }
