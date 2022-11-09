@@ -8,7 +8,7 @@
     background-position: bottom center !important;
 }
 .contact__panel{
-    margin-top:-210px !important;
+    margin-top:-20px !important;
 }
 .contact__form-panel-header h4{
     font-family: 'Roboto', sans-serif;
@@ -106,6 +106,57 @@
     .footer__widget-nav li a{
       font-size: 14px !important;
     }
+    .submit-contact{
+      flex-direction: column !important;
+      align-items: center;
+      gap:0;
+      margin-bottom: 10px;
+    }
+    .label-radio{
+      top:50%;
+    }
+    #label-radio_main{
+      left:20%;
+    }
+    .footer__widget {
+      margin-bottom:20px;
+    }
+    
+    .footer__contact-phone i{
+      color:#fff;
+    }
+    .footer__contact-phone a{
+      color:#fff;
+    }
+    .contact__panel .contact__panel-banner .cta__banner {
+      bottom: -16px;
+    }
+    .heading-3 .heading__title{
+      font-size: 18px;
+    }
+    .list-items li{
+      font-weight: 400;
+    }
+    .accordion-item .accordion__item-body p {
+      font-size: 14px;
+    }
+    .title_question{
+      font-size: 18px;
+    }
+    .heading-5 .heading__title {
+      font-size: 25px;
+      margin:10px;
+    }
+    .heading-5 .heading__desc{
+      font-size: 14px;
+    }
+    .heading__title{
+      font-size: 18px;
+      margin-top:10px;
+    }
+    .accordion-item .accordion__item-title{
+      font-size: 16px;
+    }
 }
 @media only screen and (max-width: 771px) and (min-width: 768px)  {
     .slide__content .slide__title {
@@ -120,9 +171,7 @@
 /* Gioi thieu */
 
 /* End Gioi thieu */
-.title_question{
-    font-size: 25px !important;
-}
+
 /* Modal */
 .mutiple-menu{
     color: #9b9b9b;
@@ -330,3 +379,33 @@ html {
   right:-4px;
   padding-bottom:4px;
 }
+/* Form lien he */
+.form-group{
+  margin-bottom:15px;
+}
+.submit-contact{
+  display: flex;
+  margin-top:20px;
+  flex-direction: row-reverse;
+}
+/* End Form lien he */
+/* Hover Button lien he */
+.link1 > span{
+  position: relative;
+  cursor: pointer;
+}
+
+.link1> span:before{
+  position:absolute;
+  content: "";
+  background-color:#0f3d88;
+  bottom:-5px;
+  left:0;
+  width: 0;
+  height: 3px;
+  transition:all .8s linear;
+}
+.link1> span:hover:before{
+  width: 100%;
+}
+/* End Hover Button lien he */

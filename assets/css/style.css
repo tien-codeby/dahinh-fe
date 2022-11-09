@@ -1216,6 +1216,8 @@ h6 {
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 0;
+  color:#0f3d88;
+  font-weight: 400;
 }
 
 .divider__line + .heading__desc {
@@ -1229,7 +1231,7 @@ h6 {
 } */
 
 .heading-3 .heading__title {
-  font-size: 52px;
+  font-size: 28px;
   margin-bottom: 25px;
 }
 
@@ -1402,7 +1404,7 @@ h6 {
 /* Custom Media in Mobile Phones */
 @media only screen and (max-width: 450px) {
   .heading-2 .heading__title {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .heading-2 .heading__desc {
@@ -1411,7 +1413,13 @@ h6 {
     line-height: 24px;
   }
 }
-
+.portfolio-item .portfolio__img {
+  height: 200px !important;
+}
+section{
+  padding: 0 !important;
+}
+.footer__widget-about p
 /*-------------------------
     page title
 -------------------------*/
@@ -7321,7 +7329,7 @@ textarea.form-control {
 
 .banner-layout1 .statistic-item:nth-of-type(3) {
   bottom: 10%;
-  left: 30%;
+  left: 20%;
 }
 
 .banner-layout1 .statistic-item .statistic__item-btn {
@@ -7685,6 +7693,9 @@ textarea.form-control {
 
   .job-item .job__title {
     margin-bottom: 10px;
+  }
+  .section{
+    padding:0;
   }
 }
 /* Dich vu */
