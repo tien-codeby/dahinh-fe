@@ -335,14 +335,23 @@ window.addEventListener("scroll",function(){
     if(scrollHeight > 500){
         menu.style.visibility = 'visible'
         bat.style.visibility = 'visible'
-        social.style.visibility = 'visible'
     }
     else{
         menu.style.visibility = 'hidden'
         bat.style.visibility = 'hidden'
-        social.style.visibility = 'hidden'
 
     }
+})
+let prev = window.pageYOffset;
+window.addEventListener("scroll",function(){
+    let current = window.pageYOffset;
+    if(prev < current){
+        social.style.visibility = 'visible'
+    }
+    else{
+        social.style.visibility = 'hidden'
+    }
+    prev = current;
 })
 
 
