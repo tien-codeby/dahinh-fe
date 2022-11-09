@@ -15,11 +15,62 @@
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/custom.css" />
         <link rel="stylesheet" href="./assets/css/general.css">
-
+       <link rel="stylesheet" href="./assets/bootstrap-social-gh-pages/bootstrap-social.css">
     </head>
 
     <body>
         <div class="wrapper">
+         <!-- Sidebar Menu Right -->
+            <div class="contact-menu">
+                <ul class="nav nav-pills flex-column mb-auto pt-5">
+                    <li class="border-top border-bottom">
+                        <a href="#servicesLayout2" class="nav-link text-white">
+                            <i class="fa fa-car nhatpl-icon-menu mr-2"></i>
+                            Dịch vụ
+                        </a>
+                    </li>
+                    <li class="border-bottom">
+                        <a href="#contactLayout2" class="nav-link text-white">
+                            <i class="fa fa-file-text-o mr-2"></i>
+                            Báo giá
+                        </a>
+                    </li>
+                    <li class="border-bottom">
+                        <a href="#blogGrid" class="nav-link text-white">
+                            <i class="fa fa-newspaper-o nhatpl-icon-menu mr-2"></i>
+                            Tin nổi bậc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer" class="nav-link text-white">
+                            <i class="fa fa-address-card nhatpl-icon-menu mr-2"></i>
+                           Thông tin công ty
+                        </a>
+                    </li>
+                   
+                </ul>
+                <div class="thoat text-white"><span class="px-2" style="font-size: 18px">Menu</span><i class="fa fa-times" style="font-size: 20px" aria-hidden="true"></i></div>
+    </div>
+    <div class="bat"><i class="fa fa-bars" style="font-size: 30px"></i></div>
+    <!-- End Sidebar Menu Right -->
+   <!-- Start Social Menu Left -->
+   <div class="social">
+    <div class="social__image">
+        <i class="fa fa-phone-square social__icon icon__phone" aria-hidden="true"></i>
+       
+    </div>
+    <div class="social__image">
+        <i class="fa fa-facebook-square social__icon icon__facebook" aria-hidden="true"></i>
+    </div>
+    <div class="social__image">
+       
+        <img src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/2500/zalo-seeklogo.com-512.png" alt="">
+    </div>
+    
+    
+ 
+ </div>
+   <!-- End Social Menu Left -->
             <!-- =========================
         Header
     =========================== -->
@@ -137,7 +188,7 @@
 
                                         </li>
                                         <li class='nav__item sub-menu'>
-                                          <button class="" href='#'>Thư viện<i class='ml-5 fa fa-caret-down right'></i></button>
+                                          <a class="nav__item-link" href='#'>Thư viện<i class='ml-5 fa fa-caret-down right'></i></a>
                                             <ul>
                                               <li><a class="mutiple-menu" href='#'>File tài liệu</a></li>
                                               <li><a class="mutiple-menu" href='#'>Videos clip</a></li>
@@ -189,7 +240,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <!-- /.modules-wrapper -->
+                            <!-- /.modules- -->
                         </div>
                         <!-- /.navbar-modules -->
                     </div>
@@ -339,10 +390,66 @@
                                         <i class="icon-arrow-right"></i>
                                         <span>Chi Tiết</span>
                                     </a>
-                                    <a href="#" class="btn btn__secondary">
+                                    <button type="button" class="btn btn__secondary" data-toggle="modal" data-target="#exampleModal">
                                         <i class="icon-arrow-right"></i>
                                         <span>Liên Hệ</span>
-                                    </a>
+                                    </button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <form class="contact__form-panel">
+                                              <div class="row p-5">
+                                                  <div class="col-sm-12 contact__form-panel-header">
+                                                      <h4>Liên lạc</h4>
+                                                      <p>
+                                                          Kiểm soát hoàn toàn các sản phẩm cho phép chúng tôi đảm bảo khách hàng
+                                                          của chúng tôi nhận được giá cả
+                                                      </p>
+                                                  </div>
+                                                  <div class="col-sm-6 col-md-6 col-lg-6">
+                                                      <div class="form-group">
+                                                          <input type="text" class="form-control" placeholder="Tên">
+                                                      </div>
+                                                  </div>
+                                                  <!-- /.col-lg-6 -->
+                                                  <div class="col-sm-6 col-md-6 col-lg-6">
+                                                      <div class="form-group">
+                                                          <input type="email" class="form-control" placeholder="E-mail">
+                                                      </div>
+                                                  </div>
+                                                  <!-- /.col-lg-6 -->
+                                                  <div class="col-sm-6 col-md-6 col-lg-6">
+                                                      <div class="form-group">
+                                                          <input type="text" class="form-control" placeholder="Điện thoại">
+                                                      </div>
+                                                  </div>
+                                                  <!-- /.col-lg-6 -->
+                                      
+                                                  <!-- /.col-lg-6 -->
+                                                  <div class="col-sm-12 col-md-12 col-lg-12">
+                                                      <div class="form-group">
+                                                          <textarea class="form-control" placeholder="Chi tiết bổ sung!"></textarea>
+                                                      </div>
+                                                  </div>
+                                                  <!-- /.col-lg-12 -->
+                                                  <div class="submit-contact col-sm-12 col-md-12 col-lg-12 d-flex align-items-center">
+                                                      <button type="submit" class="btn btn__secondary mr-20">
+                                                          <span>Gởi yêu cầu</span><i class="icon-arrow-right"></i>
+                                                      </button>
+                                                      <div class="input-radio">
+                                                          <label class="label-radio">Tôi chấp nhận sự riêng tư và các điều khoản.
+                                                              <input type="checkbox" name="radioGroup2" checked="">
+                                                              <span class="radio-indicator"></span>
+                                                          </label>
+                                                      </div>
+                                                  </div>
+                                                  <!-- /.col-lg-12 -->
+                                              </div>
+                                              <!-- /.row -->
+                                          </form>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
                                 <!-- /.col-lg-6 -->
 
@@ -1002,39 +1109,53 @@
                             <ul class="list-unstyled">
                                 <li class="statistic-item opened">
                                     <div class="statistic__item-panel">
-                                        <h4 class="statistic__item-counter counter">754</h4>
-                                        <p class="statistic__item-title">Người lao động</p>
+                                        <img src="./assets/images/dahinh/vicostone-doi-tac-lau-dai-cua-da-hinh-1.jpg" alt="">
+                                        
+                                        <span class="statistic__item-counter counter">26,000</span>
+                                        <p
+                                         
+                                        class="statistic__item-title ">Khách hàng trong & ngoài nước</p>
                                     </div>
                                     <button class="statistic__item-btn position-relative">
                                       <span>+</span>
-                                      <p class="statistic__item-title position-absolute absolute-x mt-2 text-nowrap" >Người lao động</p>
+                                      
                                     </button>
                                 </li>
                                 <!-- /.statistic-item -->
-                                <li class="statistic-item">
+                                <li class="statistic-item opened">
                                     <div class="statistic__item-panel">
-                                        <h4 class="statistic__item-counter counter">2,187</h4>
-                                        <p class="statistic__item-title">Khách hàng</p>
+                                        <img src="./assets/images/dahinh/da-hin-gia-cong-kim-loai-tam-cho-cac-cong-trinh.jpg" alt="">
+                                        
+                                        <span class="statistic__item-counter counter">38,000</span>
+                                        
+                                        <p
+                                         
+                                        class="statistic__item-title ">Dự án cá nhân & doanh nghiệp</p>
                                     </div>
                                     <!-- <button class="statistic__item-btn">+</button> -->
 
                                     <button class="statistic__item-btn position-relative">
                                       <span>+</span>
-                                      <p class="statistic__item-title position-absolute absolute-x mt-2 text-nowrap" >Khách hàng</p>
+                                     
                                     </button>
 
                                 </li>
                                 <!-- /.statistic-item -->
-                                <li class="statistic-item">
+                                <li class="statistic-item opened">
                                     <div class="statistic__item-panel">
-                                        <h4 class="statistic__item-counter counter">300</h4>
-                                        <p class="statistic__item-title">Đối tác</p>
+                                        <img src="./assets/images/dahinh/Dich-vu-cat-laser-chan-gap-kim-loai-1.jpg" alt="">
+                                        
+                                        <span class="statistic__item-counter counter">200</span>
+                                        
+                                        <p
+                                         
+                                        class="statistic__item-title ">Nhân viên làm việc tại 2 nhà xưởng</p>
                                     </div>
                                     <!-- <button class="statistic__item-btn">+</button> -->
 
                                     <button class="statistic__item-btn position-relative">
                                       <span>+</span>
-                                      <p class="statistic__item-title position-absolute absolute-x mt-2 text-nowrap" >Đối tác</p>
+                                    
                                     </button>
                                 </li>
                                 <!-- /.statistic-item -->
@@ -1235,9 +1356,9 @@
                         <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="contact__panel">
                                 <div class="contact__panel-banner">
-                                   <a href="#" > <img src="assets/images/dahinh/lienhe.jpg" alt="banner img" /></a>
+                                   <a href="#"> <img src="assets/images/dahinh/lienhe.jpg" alt="banner img" /></a>
                                    <!-- Modal Image Slider-->
-
+                        
                                    <!-- End Modal Image slider-->
                                     <div class="cta__banner">
                                         <p class="cta__desc">
@@ -1256,25 +1377,25 @@
                                     <div class="row">
                                         <div class="col-sm-12 contact__form-panel-header">
                                             <h4>Liên lạc</h4>
-                                            <p>
+                                            <p class="mb-0">
                                                 Kiểm soát hoàn toàn các sản phẩm cho phép chúng tôi đảm bảo khách hàng
                                                 của chúng tôi nhận được giá cả
                                             </p>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-2">
                                                 <input type="text" class="form-control" placeholder="Tên" />
                                             </div>
                                         </div>
                                         <!-- /.col-lg-6 -->
                                         <div class="col-sm-6 col-md-6 col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-2">
                                                 <input type="email" class="form-control" placeholder="E-mail" />
                                             </div>
                                         </div>
                                         <!-- /.col-lg-6 -->
                                         <div class="col-sm-6 col-md-6 col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-2">
                                                 <input type="text" class="form-control" placeholder="Điện thoại" />
                                             </div>
                                         </div>
@@ -1462,13 +1583,13 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-2.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/ban-tra-khung-inox-tron-ma-vang-1.jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
                                 <div class="blog__content">
                                     <div class="blog__meta">
-                                        <span class="blog__meta-date">20 thg 1,2019</span>
+                                        <span class="blog__meta-date">10 thg 9,2022</span>
                                         <div class="blog__meta-cat">
                                             <a href="#">Thông tin chi tiết về</a><a href="#">Dầu khí</a>
                                         </div>
@@ -1477,14 +1598,11 @@
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Các nhà nhập khẩu đạt được tiết kiệm chi phí thông qua quy tắc bán hàng đầu
-                                            tiên!</a
+                                            >TOP 16+ Bàn Trà Khung Inox Tròn Mạ PVD “sang choảnh” tại xưởng cơ khí Đa Hình năm 2022</a
                                         >
                                     </h4>
                                     <p class="blog__desc">
-                                        Cuộc chiến thương mại hiện đang xảy ra giữa Mỹ và một số quốc gia trên toàn cầu,
-                                        khốc liệt nhất là với Trung Quốc, không có dấu hiệu cho thấy bộ thuế quan đầu
-                                        tiên đánh vào năng lượng mặt trời...
+                                        Giới thiệu tới quý khách hàng Top 16+ Bàn Trà Khung Inox Tròn Mạ PVD “sang choảnh” được gia công theo yêu cầu tại xưởng cơ khí Đa Hình trong năm 2022 để quý vị tham khảo...
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1501,13 +1619,13 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-3.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/TTA_0987-scaled.jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
                                 <div class="blog__content">
                                     <div class="blog__meta">
-                                        <span class="blog__meta-date">18 thg 10,2019</span>
+                                        <span class="blog__meta-date">1 thg 8,2022</span>
                                         <div class="blog__meta-cat">
                                             <a href="#">Xây dựng</a><a href="#">, công nghiệp</a>
                                         </div>
@@ -1516,14 +1634,11 @@
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Luồng hàng hóa thông qua khả năng hiển thị, kiểm soát chuổi cung ứng tốt
-                                            hơn
+                                            >Công ty Đa Hình kỷ niệm 20 năm ngày hoạt động
                                         </a>
                                     </h4>
                                     <p class="blog__desc">
-                                        Nhà cung cấp toàn cầu kết nối các sản phẩm cho người tiêu dùng, và các doanh
-                                        nghiệp trên toàn thế giới, kiểm soát chuỗi cung ứng là tất cả, cung cấp khả năng
-                                        hiển thị và khả năng truy xuất nguồn gốc cần thiết cho ...
+                                        Vào ngày 31/7/2022, công ty cổ phần sản xuất và thương mại Đa Hình hân hoan tổ chức lễ kỷ niệm 20 năm ngày hoạt động công ty tại Nhà Xưởng Mạ PVD Đa Hình. Nhìn lại chặng đường 20 năm hình thành và phát triển, Đa Hình đã vượt qua bao thử thách, thăng trầm ...
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1540,7 +1655,7 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-4.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/Cot-co-inox-3.jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
@@ -1555,14 +1670,11 @@
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Tầm quan trọng của trọng tâm chuyên biệt trong danh mục đầu tư, Dầu & Khí
-                                            ga</a
+                                            >Cột cờ inox: Cấu tạo, phân loại và Báo giá gia công cột cờ theo yêu cầu</a
                                         >
                                     </h4>
                                     <p class="blog__desc">
-                                        Đội ngũ của chúng tôi cung cấp danh mục đầu tư có tay nghề cao và kinh nghiệm
-                                        những người quản lý biết sự phức tạp của ngành dọc và trọng tâm này về việc cung
-                                        cấp các giải pháp sáng tạo trong Dầu khí ...
+                                        Cột cờ là biểu tượng quan trọng thể hiện chủ quyền, sức mạnh và sự tự hào, là nét đặc trưng rõ rệt nhất về tinh thần dân tộc, dấu ấn quốc gia của mỗi tổ chức trên trường quốc tế …
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1578,29 +1690,26 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-2.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/son-phu-nano-cong-nghe-cao-da-hinh-4 (1).jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
                                 <div class="blog__content">
                                     <div class="blog__meta">
-                                        <span class="blog__meta-date">20 thg 1,2019</span>
+                                        <span class="blog__meta-date">14 thg 4,2022</span>
                                         <div class="blog__meta-cat">
-                                            <a href="#">Thông tin chi tiết về</a><a href="#">Dầu khí</a>
+                                            <a href="#">Dịch vụ</a><a href="#">Tin tức</a>
                                         </div>
                                         <!-- /.blog-meta-cat -->
                                     </div>
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Các nhà nhập khẩu đạt được tiết kiệm chi phí thông qua quy tắc bán hàng đầu
-                                            tiên!</a
+                                            >Gia công Sơn Phủ Nano Công Nghệ Cao tại Công ty Đa Hình</a
                                         >
                                     </h4>
                                     <p class="blog__desc">
-                                        Cuộc chiến thương mại hiện đang xảy ra giữa Mỹ và một số quốc gia trên toàn cầu,
-                                        khốc liệt nhất là với Trung Quốc, không có dấu hiệu cho thấy bộ thuế quan đầu
-                                        tiên đánh vào năng lượng mặt trời...
+                                        Xin giới thiệu Dịch vụ Sơn Phủ Nano Công Nghệ Cao Đa Hình – chuyên sơn phủ tất cả các màu cho các sản phẩm từ kim loại đến phi kim loại. Đảm bảo: Nhanh Chóng – Sáng Bóng – Đều Màu – Đẹp Mắt, đặc biệt là là CHI PHÍ cực kỳ cạnh tranh...
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1616,29 +1725,26 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-2.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/cau-tao-va-nguyen-ly-hoat-dong-be-tach-mo-bay-mo-inox-1.jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
                                 <div class="blog__content">
                                     <div class="blog__meta">
-                                        <span class="blog__meta-date">20 thg 1,2019</span>
+                                        <span class="blog__meta-date">22 thg 3,2022</span>
                                         <div class="blog__meta-cat">
-                                            <a href="#">Thông tin chi tiết về</a><a href="#">Dầu khí</a>
+                                            <a href="#">Tin tức</a>
                                         </div>
                                         <!-- /.blog-meta-cat -->
                                     </div>
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Các nhà nhập khẩu đạt được tiết kiệm chi phí thông qua quy tắc bán hàng đầu
-                                            tiên!</a
+                                            >Bẫy mỡ là gì? Cấu tạo, nguyên lý, vai trò trong hệ thống xử lý nước thải</a
                                         >
                                     </h4>
                                     <p class="blog__desc">
-                                        Cuộc chiến thương mại hiện đang xảy ra giữa Mỹ và một số quốc gia trên toàn cầu,
-                                        khốc liệt nhất là với Trung Quốc, không có dấu hiệu cho thấy bộ thuế quan đầu
-                                        tiên đánh vào năng lượng mặt trời...
+                                        Bẫy mỡ hay Bể tách mỡ có vai trò quan trọng trong không gian bếp nhà hàng, khách sạn và hệ thống xử lý nước thải. Vì vậy, hãy cùng Inox Đa Hình tìm hiểu những thông tin cơ bản cần biết về bẫy mỡ trong nội dung dưới đây....
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1654,29 +1760,26 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-2.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/mau-chung-nhan-co-cq-e1647079169961.jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
                                 <div class="blog__content">
                                     <div class="blog__meta">
-                                        <span class="blog__meta-date">20 thg 1,2019</span>
+                                        <span class="blog__meta-date">12 thg 3,2022</span>
                                         <div class="blog__meta-cat">
-                                            <a href="#">Thông tin chi tiết về</a><a href="#">Dầu khí</a>
+                                            <a href="#">Tin tức</a>
                                         </div>
                                         <!-- /.blog-meta-cat -->
                                     </div>
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Các nhà nhập khẩu đạt được tiết kiệm chi phí thông qua quy tắc bán hàng đầu
-                                            tiên!</a
+                                            >CO/ CQ, ASTM, JIS QA/ QC và những tiêu chuẩn quan trọng trong ngành Thép không gỉ</a
                                         >
                                     </h4>
                                     <p class="blog__desc">
-                                        Cuộc chiến thương mại hiện đang xảy ra giữa Mỹ và một số quốc gia trên toàn cầu,
-                                        khốc liệt nhất là với Trung Quốc, không có dấu hiệu cho thấy bộ thuế quan đầu
-                                        tiên đánh vào năng lượng mặt trời...
+                                        Chứng nhận CO/ CQ, ASTM, JIS, QA/ QC là những thuật ngữ quan trọng và phổ biến trong kinh doanh, xuất nhập khẩu thép không gỉ nhằm đảm bảo nguyên liệu đầu vào cho tới chất lượng đầu ra sản phẩm. Chính vì vậy, kinh doanh trong ngành thép, nhất thiết phải tìm hiểu về các tiêu chuẩn quan trọng này....
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1692,29 +1795,26 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-2.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/ron-rang-ngay-quoc-te-phu-nu-1.jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
                                 <div class="blog__content">
                                     <div class="blog__meta">
-                                        <span class="blog__meta-date">20 thg 1,2019</span>
+                                        <span class="blog__meta-date">9 thg 3,2022</span>
                                         <div class="blog__meta-cat">
-                                            <a href="#">Thông tin chi tiết về</a><a href="#">Dầu khí</a>
+                                            <a href="#">Hoạt động</a><a href="#">Tin tức</a>
                                         </div>
                                         <!-- /.blog-meta-cat -->
                                     </div>
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Các nhà nhập khẩu đạt được tiết kiệm chi phí thông qua quy tắc bán hàng đầu
-                                            tiên!</a
+                                            >Chị em Đa Hình rộn ràng ngày Quốc tế Phụ Nữ 8/3</a
                                         >
                                     </h4>
                                     <p class="blog__desc">
-                                        Cuộc chiến thương mại hiện đang xảy ra giữa Mỹ và một số quốc gia trên toàn cầu,
-                                        khốc liệt nhất là với Trung Quốc, không có dấu hiệu cho thấy bộ thuế quan đầu
-                                        tiên đánh vào năng lượng mặt trời...
+                                        Nhân Ngày Quốc Tế Phụ Nữ 8/3, ngày tri ân và bày tỏ yêu thương đối với một nửa thế giới. Công ty CP sản xuất và thương mại Đa Hình chúc các chị em luôn luôn vui vẻ, sức khỏe tràn đầy, hạnh phúc và thành công...
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1730,29 +1830,26 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-2.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/thap-doi-petronas.jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
                                 <div class="blog__content">
                                     <div class="blog__meta">
-                                        <span class="blog__meta-date">20 thg 1,2019</span>
+                                        <span class="blog__meta-date">31 thg 12,2021</span>
                                         <div class="blog__meta-cat">
-                                            <a href="#">Thông tin chi tiết về</a><a href="#">Dầu khí</a>
+                                           <a href="#">Tin tức</a>
                                         </div>
                                         <!-- /.blog-meta-cat -->
                                     </div>
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Các nhà nhập khẩu đạt được tiết kiệm chi phí thông qua quy tắc bán hàng đầu
-                                            tiên!</a
+                                            >TOP 7 tòa nhà sử dụng thép không gỉ nổi tiếng trên thế giới</a
                                         >
                                     </h4>
                                     <p class="blog__desc">
-                                        Cuộc chiến thương mại hiện đang xảy ra giữa Mỹ và một số quốc gia trên toàn cầu,
-                                        khốc liệt nhất là với Trung Quốc, không có dấu hiệu cho thấy bộ thuế quan đầu
-                                        tiên đánh vào năng lượng mặt trời...
+                                        Thép không gỉ (hay inox) là một vật liệu xây dựng lý tưởng về nhiều mặt, bền và chống ăn mòn. Nó đã được sử dụng làm vật liệu xây dựng từ những năm 1920, điều này chứng tỏ tuổi thọ và sự phổ biến lâu dài của nó. Một số tòa nhà dễ nhận biết nhất trên thế giới (và các địa danh khác như công trình cầu, tượng và đài kỷ niệm) đã sử dụng thép không gỉ trong xây dựng của họ.
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1768,29 +1865,26 @@
                             <div class="blog-item">
                                 <div class="blog__img">
                                     <a href="#">
-                                        <img src="assets/images/dahinh/tintuc-2.jpg" alt="blog image" />
+                                        <img src="assets/images/dahinh/delcam-02.jpg" alt="blog image" />
                                     </a>
                                 </div>
                                 <!-- /.entry-img -->
                                 <div class="blog__content">
                                     <div class="blog__meta">
-                                        <span class="blog__meta-date">20 thg 1,2019</span>
+                                        <span class="blog__meta-date">30 thg 12,2021</span>
                                         <div class="blog__meta-cat">
-                                            <a href="#">Thông tin chi tiết về</a><a href="#">Dầu khí</a>
+                                            <a href="#">Tin tức</a>
                                         </div>
                                         <!-- /.blog-meta-cat -->
                                     </div>
                                     <!-- /.blog-meta -->
                                     <h4 class="blog__title">
                                         <a href="#"
-                                            >Các nhà nhập khẩu đạt được tiết kiệm chi phí thông qua quy tắc bán hàng đầu
-                                            tiên!</a
+                                            >TOP 10 phần mềm thiết kế bản vẽ kỹ thuật cơ khí phổ biến nhất thế giới</a
                                         >
                                     </h4>
                                     <p class="blog__desc">
-                                        Cuộc chiến thương mại hiện đang xảy ra giữa Mỹ và một số quốc gia trên toàn cầu,
-                                        khốc liệt nhất là với Trung Quốc, không có dấu hiệu cho thấy bộ thuế quan đầu
-                                        tiên đánh vào năng lượng mặt trời...
+                                        Thiết kế bản vẽ cơ khí là bước đầu tiên trong sản xuất gia công cơ khí và là yếu tố quan trọng nhất để xác định hiệu suất gia công sản phẩm cơ khí...
                                     </p>
                                     <a href="#" class="btn btn__link">
                                         <span>Đọc Thêm</span>
@@ -1816,148 +1910,140 @@
             <!-- ========================
       Footer
     ========================== -->
-            <footer id="footer" class="footer">
-                <div class="footer-top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 footer__widget footer__widget-about">
-                                <h6 class="footer__widget-title">liên hệ nhanh</h6>
-                                <div class="footer__widget-content">
-                                    <p class="color-gray">
-                                        Nếu bạn có bất kỳ câu hỏi hoặc cần trợ giúp, vui lòng liên hệ với nhóm của chúng
-                                        tôi.
-                                    </p>
-                                    <p class="footer__contact-phone">
-                                        <i class="icon-phone"></i>
-                                        <a href="tel:0344.703838">0344.703838</a>
-                                    </p>
-                                    <p>X. Tịnh Phong, H. Sơn Tịnh, Quảng Ngãi</p>
-                                    <ul class="social__icons">
-                                        <li>
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.social-icons -->
-                                </div>
-                            </div>
-                            <!-- /.col-xl-3 -->
-                            <div
-                                class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 offset-xl-1 footer__widget footer__widget-nav"
-                            >
-                                <h6 class="footer__widget-title">Công ty</h6>
-                                <div class="footer__widget-content">
-                                    <nav>
-                                        <ul class="list-unstyled">
-                                            <li><a href="#"> Về chúng tôi</a></li>
-                                            <li>
-                                                <a href="#">Gặp gỡ nhóm của chúng tôi</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"> Phương tiện truyền thông tin tức</a>
-                                            </li>
-                                            <li><a href="#"> Nghiên cứu điển hình</a></li>
-                                            <li><a href="#">Liên lạc </a></li>
-                                            <li><a href="#"> Nghề nghiệp</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <!-- /.footer-widget-content -->
-                            </div>
-                            <!-- /.col-xl-2 -->
-                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 footer__widget footer__widget-nav">
-                                <h6 class="footer__widget-title text-nowrap">Các ngành nghề</h6>
-                                <div class="footer__widget-content">
-                                    <nav>
-                                        <ul class="list-unstyled">
-                                            <li><a href="#"> Bán lẻ & Tiêu dùng</a></li>
-                                            <li>
-                                                <a href="#">Khoa học & Chăm sóc sức khỏe</a>
-                                            </li>
-                                            <li><a href="#"> Công nghiệp & Hóa chất</a></li>
-                                            <li><a href="#"> Sản xuất điện</a></li>
-                                            <li>
-                                                <a href="#"> Thực phẩm & nước giải khát</a>
-                                            </li>
-                                            <li><a href="#"> Dầu khí</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <!-- /.footer-widget-content -->
-                            </div>
-                            <!-- /.col-xl-2 -->
-                            <div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 footer__widget footer__widget-newsletter">
-                                <div class="footer__widget-content">
-                                    <p>
-                                        Đăng ký nhận thông báo trong ngành, tin tức, suy nghĩ mới nhất của chúng tôi và
-                                        thông tin chi tiết từ Nhatpl.
-                                    </p>
-                                    <form class="widget__newsletter-form">
-                                        <div class="form-group mb-0">
-                                            <input
-                                                type="text"
-                                                class="form-control"
-                                                placeholder="Địa chỉ Email của bạn"
-                                            />
-                                            <button type="submit" class="btn btn__primary btn__hover2">
-                                                <i class="icon-arrow-right"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- /.footer-widget-content -->
-                                <p class="text-right fz-13 mt-20 mb-0">
-                                    Bạn có thể rút lại sự đồng ý của mình bất cứ lúc nào!
-                                </p>
-                            </div>
-                            <!-- /.col-xl-4 -->
+    <footer id="footer" class="footer">
+        <div class="footer-top ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 footer__widget footer__widget-about">
+                        <h6 class="footer__widget-title">liên hệ nhanh</h6>
+                        <div class="footer__widget-content">
+                            <p class="color-gray">
+                                Nếu bạn có bất kỳ câu hỏi hoặc cần trợ giúp, vui lòng liên hệ với nhóm của chúng
+                                tôi.
+                            </p>
+                            <p class="footer__contact-phone">
+                                <i class="icon-phone"></i>
+                                <a href="tel:0344.703838">0344.703838</a>
+                            </p>
+                            <p>X. Tịnh Phong, H. Sơn Tịnh, Quảng Ngãi</p>
+                            <ul class="social__icons">
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                            <!-- /.social-icons -->
                         </div>
-                        <!-- /.row -->
                     </div>
-                    <!-- /.container -->
-                </div>
-                <!-- /.footer-top -->
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-3 col-lg-3">
-                                <img src="assets/images/logo/logo-footer.png" alt="logo" />
-                            </div>
-                            <!-- /.col-lg-3 -->
-                            <div class="col-sm-12 col-md-9 col-lg-9 text-right">
-                                <div class="footer__copyright">
-                                    <nav>
-                                        <ul
-                                            class="footer__copyright-links list-unstyled d-flex flex-wrap justify-content-end"
-                                        >
-                                            <li>
-                                                <a href="#"> Điều khoản và điều kiện</a>
-                                            </li>
-                                            <li><a href="#"> Chính sách bảo mật</a></li>
-                                            <li><a href="#"> Sơ đồ trang web</a></li>
-                                            <li><a href="#">Đăng nhập nhân viên</a></li>
-                                        </ul>
-                                    </nav>
-                                    <p class="mb-0">
-                                        &copy; 2022 Nhatpl, Mọi quyền được bảo lưu. Với tình yêu bởi
-                                        <a href="http://codeby.com">nhatpl.com</a>
-                                    </p>
-                                </div>
-                                <!-- /.Footer-copyright -->
-                            </div>
-                            <!-- /.col-lg-9 -->
+                    <!-- /.col-xl-3 -->
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 offset-xl-1 footer__widget footer__widget-nav">
+                        <h6 class="footer__widget-title">Công ty</h6>
+                        <div class="footer__widget-content">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"> Về chúng tôi</a></li>
+                                    <li>
+                                        <a href="#">Gặp gỡ nhóm của chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Phương tiện truyền thông tin tức</a>
+                                    </li>
+                                    <li><a href="#"> Nghiên cứu điển hình</a></li>
+                                    <li><a href="#">Liên lạc </a></li>
+                                    <li><a href="#"> Nghề nghiệp</a></li>
+                                </ul>
+                            </nav>
                         </div>
-                        <!-- /.row -->
+                        <!-- /.footer-widget-content -->
                     </div>
-                    <!-- /.container -->
+                    <!-- /.col-xl-2 -->
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 footer__widget footer__widget-nav">
+                        <h6 class="footer__widget-title text-nowrap">Các ngành nghề</h6>
+                        <div class="footer__widget-content">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"> Bán lẻ &amp; Tiêu dùng</a></li>
+                                    <li>
+                                        <a href="#">Khoa học &amp; Chăm sóc sức khỏe</a>
+                                    </li>
+                                    <li><a href="#"> Công nghiệp &amp; Hóa chất</a></li>
+                                    <li><a href="#"> Sản xuất điện</a></li>
+                                    <li>
+                                        <a href="#"> Thực phẩm &amp; nước giải khát</a>
+                                    </li>
+                                    <li><a href="#"> Dầu khí</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- /.footer-widget-content -->
+                    </div>
+                    <!-- /.col-xl-2 -->
+                    <div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 footer__widget footer__widget-newsletter">
+                        <div class="footer__widget-content">
+                            <p>
+                                Đăng ký nhận thông báo trong ngành, tin tức, suy nghĩ mới nhất của chúng tôi và
+                                thông tin chi tiết từ Nhatpl.
+                            </p>
+                            <form class="widget__newsletter-form">
+                                <div class="form-group mb-0">
+                                    <input type="text" class="form-control" placeholder="Địa chỉ Email của bạn">
+                                    <button type="submit" class="btn btn__primary btn__hover2">
+                                        <i class="icon-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.footer-widget-content -->
+                        <p class="text-right fz-13 mt-20 mb-0">
+                            Bạn có thể rút lại sự đồng ý của mình bất cứ lúc nào!
+                        </p>
+                    </div>
+                    <!-- /.col-xl-4 -->
                 </div>
-                <!-- /.Footer-bottom -->
-            </footer>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer-top -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <img src="assets/images/logo/logo-footer.png" alt="logo">
+                    </div>
+                    <!-- /.col-lg-3 -->
+                    <div class="col-sm-12 col-md-9 col-lg-9 text-right">
+                        <div class="footer__copyright">
+                            <nav>
+                                <ul class="footer__copyright-links list-unstyled d-flex flex-wrap justify-content-end">
+                                    <li>
+                                        <a href="#"> Điều khoản và điều kiện</a>
+                                    </li>
+                                    <li><a href="#"> Chính sách bảo mật</a></li>
+                                    <li><a href="#"> Sơ đồ trang web</a></li>
+                                    <li><a href="#">Đăng nhập nhân viên</a></li>
+                                </ul>
+                            </nav>
+                            <p class="mb-0">
+                                © 2022 Nhatpl, Mọi quyền được bảo lưu. Với tình yêu bởi
+                                <a href="http://codeby.com">nhatpl.com</a>
+                            </p>
+                        </div>
+                        <!-- /.Footer-copyright -->
+                    </div>
+                    <!-- /.col-lg-9 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.Footer-bottom -->
+    </footer>
             <!-- /.Footer -->
             <button id="scrollTopBtn">
                 <i class="fa fa-long-arrow-up"></i>
@@ -1974,14 +2060,16 @@
             </div>
             <!-- /.module-search-container -->
         </div>
-        <!-- /.wrapper -->
+        <!-- /. -->
 
         <script src="assets/js/jquery-3.3.1.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="./assets/js/nhatpl.js"></script>
+        <script src="./assets/js/nhatplanimation.js"></script>
         <script>
             $('.sub-menu ul').hide();
-$(".sub-menu a").click(function () {
+$(".sub-menu a").on("hover mouseover",function () {
   $(this).parent(".sub-menu").children("ul").slideToggle("100");
   $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
 });

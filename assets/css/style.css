@@ -1205,7 +1205,7 @@ h6 {
 
 .heading__title {
   font-family: 'Roboto', sans-serif;
-  font-size: 34px;
+  font-size: 28px;
   margin-bottom: 20px;
   margin:0 auto;
   text-indent: 30px;
@@ -2973,7 +2973,7 @@ textarea.form-control {
 .module__btn-phone i {
   font-size: 18px;
   margin-right: 7px;
-  color: #0f3d88;
+  cursor: pointer;
 }
 
 .module__btn-phone a {
@@ -4044,10 +4044,10 @@ textarea.form-control {
 .footer__widget-nav li a {
   display: block;
   position: relative;
-  color: #9b9b9b;
   font-size: 14px;
   line-height: 33px;
   padding-left: 17px;
+  color:#fff;
 }
 
 .footer__widget-nav li a:after {
@@ -7338,11 +7338,11 @@ textarea.form-control {
 
 .banner-layout1 .statistic-item .statistic__item-panel {
   width: 200px;
-  height: 170px;
+  /* height: 170px; */
   border-radius: 4px;
   background-color: #ffffff;
   text-align: left;
-  padding: 25px 40px 40px;
+  /* padding: 25px 40px 40px; */
   margin-left: -15px;
   position: relative;
   z-index: -1;

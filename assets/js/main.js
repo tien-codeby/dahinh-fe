@@ -19,7 +19,7 @@
      
  ----------------------------*/
 
-$(function () {
+ $(function () {
 
     "use strict";
 
@@ -110,10 +110,10 @@ $(function () {
     loadMore('.loadMoreportfolio', '.portfolio-hidden > .portfolio-item');
 
     /*==========   Toggle statistic Panel  ==========*/
-    $('.statistic__item-btn').on('click', function () {
-        $(this).parent().addClass('opened');
-        $(this).parent().siblings().removeClass('opened')
-    })
+    // $('.statistic__item-btn').on('click', function () {
+    //     $(this).parent().addClass('opened');
+    //     $(this).parent().siblings().removeClass('opened')
+    // })
 
     /*==========   Owl Carousel  ==========*/
     $('.carousel').each(function () {
@@ -312,10 +312,35 @@ function DateAndTime() {
 
 new DateAndTime();
 setInterval("DateAndTime()", 1000);
+// Slider Image Contact 
 
-    
+  
+// End Slider Image Contact
+// Toggle
 
       
-      
-   
-    
+var thoat = document.querySelector(".thoat");
+var menu = document.querySelector(".contact-menu")
+var social = document.querySelector(".social");
+thoat.addEventListener("click",function(){
+    menu.classList.toggle("bienmat")
+})
+var bat = document.querySelector(".bat");
+bat.addEventListener("click",function(){
+    menu.classList.remove("bienmat")
+})
+
+window.addEventListener("scroll",function(){
+    const scrollHeight = window.pageYOffset
+    if(scrollHeight > 500){
+        menu.style.visibility = 'visible'
+        bat.style.visibility = 'visible'
+        social.style.visibility = 'visible'
+    }
+    else{
+        menu.style.visibility = 'hidden'
+        bat.style.visibility = 'hidden'
+        social.style.visibility = 'hidden'
+
+    }
+})
