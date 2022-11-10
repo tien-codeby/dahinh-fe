@@ -412,228 +412,29 @@ width: 100%;
 }
 
 /* End Hover Button lien he */
-h5.title {
-  margin: 0;
+/* Image Slider Contact */
+.portfolio-item__contact .portfolio__img{
+  height: 350px;
 }
-.slider-modal {
-  display: none;
-  opacity: 0;
-  border-top: 2px solid #083;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) translateZ(0);
-  max-width: 575px;
-  width: 100%;
-  background: #fff;
-  z-index: 9001;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.4), 0px 0px 0px 3000px rgba(0,0,0,0.25);
-}
-.slider-modal.modal-active {
-  display: block;
-  animation-name: modal-enter;
-  animation-duration: 0.3s;
-  animation-iterations: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-.slider-modal.modal-close {
-  animation-name: modal-leave;
-  animation-duration: 0.2s;
-  animation-iterations: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-.slider-modal .title {
-  font-size: 16px;
-  padding: 20px;
-  font-weight: normal;
-  color: #929292;
-}
-.slider-modal .slides {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-  width: 100%;
-}
-.slider-modal .slide {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center center;
-  display: inline-block;
-  z-index: 1;
-}
-.slider-modal .slide.active {
-  z-index: 3;
-}
-.slider-modal .slider-image-caption {
-  text-align: center;
-  font-size: 14px;
-  color: #777;
-}
-.slider-modal .close-icon {
-  position: absolute;
-  right: 10px;
-  top: 8px;
-  background: transparent;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  transition: all 0.2s;
+.portfolio-item__contact .portfolio__img img{
   cursor: pointer;
+  height: 100%;
+  object-fit: cover;
 }
-.slider-modal .close-icon:before,
-.slider-modal .close-icon:after {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 2px;
-  background: #d00;
-  left: 50%;
-  top: 50%;
-  margin-top: calc(20px / -2);
-  margin-left: calc(2px / -2);
+.portfolio-carousel .carousel-arrows .owl-nav .owl-prev, .portfolio-carousel .carousel-arrows .owl-nav .owl-next{
+  top:43%;
 }
-.slider-modal .close-icon:before {
-  transform: rotate(45deg);
+.portfolio-item__contact .contact-title__first{
+  font-size: 20px;
+  font-family: "Roboto";
+  margin:15px 0;
+ 
 }
-.slider-modal .close-icon:after {
-  transform: rotate(-45deg);
+.portfolio-item__contact .contact-title__first .contact-title{
+  text-decoration: underline;
 }
-.slider-modal .close-icon:active {
-  background: rgba(0,0,0,0.1);
+#contactModalLabel{
+  font-size: 19px;
+  color:#0f3d88
 }
-.slider-modal .nav-arrow {
-  opacity: 0.3;
-  position: absolute;
-  background: #fff;
-  height: 30px;
-  width: 30px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-  border-radius: 50%;
-  z-index: 10;
-  top: 50%;
-  margin-top: -15px;
-  cursor: pointer;
-  transition: all 0.2s ease-out;
-}
-.slider-modal .nav-arrow:hover {
-  opacity: 0.8;
-}
-.slider-modal .nav-arrow:before,
-.slider-modal .nav-arrow:after {
-  content: "";
-  width: 2px;
-  height: 10px;
-  background: #000;
-  position: absolute;
-  left: 9px;
-  top: 10px;
-}
-.slider-modal .nav-arrow:before {
-  transform: rotate(50deg) translateY(-50%);
-}
-.slider-modal .nav-arrow:after {
-  transform: rotate(-50deg) translateY(50%);
-}
-.slider-modal .nav-arrow.right {
-  right: 20px;
-  transform: rotate(180deg);
-}
-.slider-modal .nav-arrow.left {
-  left: 20px;
-}
-@-moz-keyframes modal-enter {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  70% {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-@-webkit-keyframes modal-enter {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  70% {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-@-o-keyframes modal-enter {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  70% {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-@keyframes modal-enter {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  70% {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-@-moz-keyframes modal-leave {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
-  }
-}
-@-webkit-keyframes modal-leave {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
-  }
-}
-@-o-keyframes modal-leave {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
-  }
-}
-@keyframes modal-leave {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
-  }
-}
+/* End Image Slider Contact */
