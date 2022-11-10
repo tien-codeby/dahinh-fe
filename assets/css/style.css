@@ -3997,7 +3997,7 @@ textarea.form-control {
 }
 
 .footer__contact-phone i {
-  color: #0f3d88;
+  /* color: #0f3d88; */
   font-size: 18px;
   margin-right: 8px;
 }
@@ -4006,8 +4006,9 @@ textarea.form-control {
   font-family: 'Teko', sans-serif;
   font-size: 35px;
   font-weight: 300;
-  color: #0f3d88;
+  /* color: #0f3d88; */
   line-height: 1;
+  color: #fff;
 }
 
 .footer__widget-newsletter .footer__widget-content {
@@ -7705,4 +7706,3 @@ textarea.form-control {
 .service__title1{
   padding:20px 15px;
 }
-
