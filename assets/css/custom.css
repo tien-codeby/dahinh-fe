@@ -421,9 +421,7 @@ width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.portfolio-carousel .carousel-arrows .owl-nav .owl-prev, .portfolio-carousel .carousel-arrows .owl-nav .owl-next{
-  top:43%;
-}
+
 .portfolio-item__contact .contact-title__first{
   font-size: 20px;
   font-family: "Roboto";
