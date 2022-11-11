@@ -176,10 +176,7 @@
   .accordion-item .accordion__item-title{
     font-size: 16px;
   }
-  .btn__bordered.btn__white{
-    display: block;
-    margin:0 auto;
-  }
+
   .banner-layout1 .statistic-item:first-child{
     top:5%;
     left:3%;
@@ -190,6 +187,24 @@
   }
   .banner-layout4 .blockquote{
     margin-top:-20px;
+  }
+  .testimonials .carousel-arrows .owl-nav .owl-prev, .testimonials .carousel-arrows .owl-nav .owl-next{
+    display:none;
+  }
+  .testimonial-item .testimonial__desc{
+    padding-right: 0;
+  }
+  .footer-top .footer__widget-title{
+    margin-bottom: 5px;
+  }
+  .footer__widget-about p{
+    margin-bottom: 5px;
+  }
+  .footer .social__icons{
+    margin-top:0;
+  }
+  .footer__copyright-links{
+    margin-top:0;
   }
 }
 @media only screen and (max-width: 771px) and (min-width: 768px)  {
